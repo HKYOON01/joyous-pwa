@@ -1,8 +1,8 @@
-
 {
   "expo": {
-    "name": "joyous-pwa",
-    "slug": "joyous-pwa",
+    "name": "joyous-app-pwa",
+    "slug": "joyous-app-pwa",
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -16,9 +16,7 @@
     },
     "assetBundlePatterns": ["**/*"],
     "web": {
-      "favicon": "./assets/favicon.png",
-      "publicPath": "./"
-    },
-    "platforms": ["ios", "android", "web"]
+      "favicon": "./assets/favicon.png"
+    }
   }
 }
