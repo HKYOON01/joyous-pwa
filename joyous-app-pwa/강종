@@ -1,0 +1,40 @@
+import React from 'react';
+import { View, Text, StyleSheet, Pressable } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Kangjong Demo App</Text>
+      <Pressable
+        style={styles.button}
+        onPress={() => alert('Hello, Kangjong!')}
+      >
+        <Text style={styles.buttonText}>테스트 버튼</Text>
+      </Pressable>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, 
+    justifyContent: 'center', 
+    alignItems: 'center', 
+    backgroundColor: '#E8F6FF'
+  },
+  title: {
+    fontSize: 24, 
+    marginBottom: 20, 
+    color: '#0077CC'
+  },
+  button: {
+    paddingVertical: 12, 
+    paddingHorizontal: 24, 
+    backgroundColor: '#00B8E6', 
+    borderRadius: 8
+  },
+  buttonText: {
+    fontSize: 16, 
+    color: '#FFF'
+  },
+});
